@@ -1,7 +1,7 @@
 class Crewhaus < Formula
   desc "Modular meta-harness — compile a single spec into multiple agent runtimes"
   homepage "https://github.com/crewhaus/factory"
-  version "0.3.1"
+  version "0.3.2"
   license "Apache-2.0"
 
   on_macos do
@@ -12,22 +12,22 @@ class Crewhaus < Formula
     # and may crash. Serve the native arm64 binary on every Apple-Silicon host,
     # translated or not. Genuine Intel Macs (AVX2-capable) still get the x64 build.
     if Hardware::CPU.physical_cpu_arm64?
-      url "https://github.com/crewhaus/factory/releases/download/v0.3.1/crewhaus-macos-arm64-0.3.1"
-      sha256 "71927e51fb80cc142ed4186e2dbaebbe5d0d4c650cca40481f78ac79434e0745"
+      url "https://github.com/crewhaus/factory/releases/download/v0.3.2/crewhaus-macos-arm64-0.3.2"
+      sha256 "2031aa3c8d1564fe49eddcc004cd4b45c54267d327b4bac2692c25d1d73b8a0c"
     else
-      url "https://github.com/crewhaus/factory/releases/download/v0.3.1/crewhaus-macos-x64-0.3.1"
-      sha256 "628cde09de27248c91097a0ffe48340a4d73c6030462936d2f61dcfba2395734"
+      url "https://github.com/crewhaus/factory/releases/download/v0.3.2/crewhaus-macos-x64-0.3.2"
+      sha256 "52995fc5edbbc7cb5fb9856abae066faa2e50da50ae43408720b48993bf03485"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/crewhaus/factory/releases/download/v0.3.1/crewhaus-linux-arm64-0.3.1"
-      sha256 "42257027d3b7ae9b3ec1d7a4eda01314d31b910a081718b199240cd239f922aa"
+      url "https://github.com/crewhaus/factory/releases/download/v0.3.2/crewhaus-linux-arm64-0.3.2"
+      sha256 "5014a38e0bf85dba5318c3f856962f7d59bdf2d72fd89482e0aacd9287911303"
     end
     on_intel do
-      url "https://github.com/crewhaus/factory/releases/download/v0.3.1/crewhaus-linux-x64-0.3.1"
-      sha256 "6d207d8d939084c69b887a987c88ebbfc96c5896e71d82322e955ae08f331bd1"
+      url "https://github.com/crewhaus/factory/releases/download/v0.3.2/crewhaus-linux-x64-0.3.2"
+      sha256 "22a215c8d471caa5376aa57766d1767ec7d924d85f9d764de765910768f68c37"
     end
   end
 
